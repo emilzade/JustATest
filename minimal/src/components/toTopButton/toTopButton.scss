@@ -1,0 +1,45 @@
+.toTopButton-outer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  .toTopButton-inner {
+    background-color:rgb(32, 32, 32);
+    border-radius: 100px;
+    transition: 0.5s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        filter: invert(1);
+        width:80%;  
+        height:80%;
+    }
+  }
+  .toTopButton-inner-off {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .toTopButton-inner-on {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+    .toTopButton-inner{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 1200px) and(min-width:768px) {
+    .toTopButton-inner{
+        width: 90px;
+        height: 90px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    .toTopButton-inner{
+        width: 100px;
+        height: 100px;
+    }
+}

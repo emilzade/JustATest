@@ -1,0 +1,175 @@
+.page2-main-container {
+  padding:20px;
+  margin-top:60px;
+    .page2-header {
+      text-align: center;
+      font-family: roboto-medium;
+      color:rgb(65, 65, 65);
+    }
+    .page2-text {
+      text-align: center;
+      font-family: raleway-thin;
+      padding: 20px;
+    }
+    .page2-box-container {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+      .page2-box {
+        height: 200px;
+        transition:1s;
+        position: relative;
+        overflow: hidden;
+        
+        img {
+          width: 88%;
+          height: 100%;
+        }
+        .page2-box-text {
+          position: absolute;
+          right: -54px;
+          top:50px;
+          width:140px;
+          transform: rotateZ(90deg);
+          font-family: sora-light;
+          font-size:40px;
+          transition:0.4s;
+          white-space: nowrap;
+          line-height:40px;
+        }
+        .page2-box-hover{
+            position: absolute;
+            background-color:white;
+            height:100%;
+            width:100%;
+            transition:0.4s ease-in-out;
+            font-family:roboto-bold;
+            top:105%;
+            .page2-box-hover-right{
+                width:140px;
+                font-size:40px;
+                position:absolute;
+                right:-55px;
+                transform:rotateZ(90deg);
+                font-family:sora-light;
+                top:40px;
+            }
+            .page2-box-hover-button{
+                display:block;
+                margin:20px 10px;
+                width:200px;
+                text-decoration: none;
+                font-size:20px;
+                font-family:sora-light;
+                text-align: center;
+                padding:10px;
+                border-radius:50px;
+            }
+        }
+      }
+      .page2-box:hover{
+          .page2-box-hover{
+              top:17%;
+          }
+      }
+      .page2-box:nth-child(1){
+            .page2-box-text{
+                color:#0d2f4b;
+            }
+            .page2-box-hover{
+                color:#0d2f4b;
+                .page2-box-hover-button{
+                    border:1px solid #0d2f4b;
+                    color:#0d2f4b;
+                }
+            }
+      }
+      .page2-box:nth-child(2){
+           .page2-box-text{
+              color:#5f514e;
+           }
+           .page2-box-hover{
+            color:#5f514e;
+            .page2-box-hover-button{
+                border:1px solid #5f514e;
+                color:#5f514e;
+            }
+        }
+      }
+      .page2-box:nth-child(3){
+            .page2-box-text{
+                color:#2bb656;
+            }
+            .page2-box-hover{
+                color:#2bb656;
+                .page2-box-hover-button{
+                    border:1px solid #2bb656;
+                    color:#2bb656;
+                }
+            }
+      }
+      .page2-box:nth-child(4){
+            .page2-box-text{
+                color:#354b72;
+            }
+            .page2-box-hover{
+                color:#354b72;
+                .page2-box-hover-button{
+                    border:1px solid #354b72;
+                    color:#354b72;
+                }
+            }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .page2-header {
+      font-size: 50px;
+    }
+    .page2-text {
+      font-size: 20px;
+    }
+    .page2-box {
+      width: 150px;
+      height: 100px;
+    }
+      .page2-box-container {
+        width: 80vw;
+        .page2-box{
+          width:320px;
+      }
+      }
+  }
+  @media screen and (max-width: 1200px) and(min-width:768px) {
+    .page2-header {
+      font-size: 60px;
+    }
+    .page2-text {
+      font-size: 25px;
+    }
+      .page2-box-container {
+        width: 60vw;
+        .page2-box{
+          width:260px;
+      }
+      }
+  }
+  @media screen and (min-width: 1201px) {
+    .page2-header {
+      font-size: 80px;
+    }
+    .page2-text {
+      font-size: 30px;
+    }
+  
+    .page2-box-container {
+      width: 70vw;
+      .page2-box {
+        width: 350px;
+      }
+    }
+  }

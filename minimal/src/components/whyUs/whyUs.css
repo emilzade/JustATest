@@ -1,0 +1,111 @@
+.w-u-main-container {
+  padding-top: 20px;
+}
+
+.w-u-main-container .w-u-header .w-u-header-top {
+  font-family: roboto-medium;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w-u-main-container .w-u-header .w-u-header-bottom-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w-u-main-container .w-u-header .w-u-header-bottom-container .w-u-header-bottom-inner {
+  font-family: raleway-extrabold;
+  display: block;
+  color: #fff;
+  background-color: #000;
+}
+
+.w-u-main-container .w-u-header .w-u-header-bottom-container .w-u-header-bottom-inner:nth-child(2) {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  -webkit-clip-path: inset(-1% -1% 50% -1%);
+          clip-path: inset(-1% -1% 50% -1%);
+}
+
+.w-u-main-container .w-u-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.w-u-main-container .w-u-body .w-u-body-text {
+  font-family: roboto-thin;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .w-u-header-top {
+    font-size: 40px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .w-u-header-bottom-inner {
+    font-size: 60px;
+  }
+  .w-u-body-text {
+    font-size: 18px;
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .w-u-header-top {
+    font-size: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .w-u-header-bottom-inner {
+    font-size: 100px;
+  }
+  .w-u-body-text {
+    font-size: 20px;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .w-u-header-top {
+    font-size: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .w-u-header-bottom-inner {
+    font-size: 170px;
+  }
+  .w-u-body-text {
+    font-size: 24px;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=whyUs.css.map */
